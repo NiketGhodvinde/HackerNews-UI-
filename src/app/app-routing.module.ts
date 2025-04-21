@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { StoryListComponent } from './components/story-list/story-list.component';
 
 const routes: Routes = [
-  { path: 'stories', component: StoryListComponent }
+  { path: '', redirectTo: '/stories', pathMatch: 'full' },
+  { path: 'stories', component: StoryListComponent },
 ];
 
 @NgModule({
