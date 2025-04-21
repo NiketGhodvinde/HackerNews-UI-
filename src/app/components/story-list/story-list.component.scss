@@ -1,0 +1,70 @@
+.list-group-item {
+    border: 1px solid #dee2e6;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-outline-primary {
+    white-space: nowrap;
+}
+
+.pagination .page-link {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+ul.pagination {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+ul.pagination li {
+    margin-right: 4px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.full-height {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    padding-bottom: 80px;
+}
+
+.fixed-pagination {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+body {
+    overflow-x: hidden;
+}
